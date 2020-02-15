@@ -1,0 +1,129 @@
+html {
+	--color-dark: rgba(5, 5, 20, 0.75);
+	--color-dark-highlight: rgba(10, 10, 30, 0.75);
+	--color-medium: #222237;
+	--color-medium-highlight: #2a2a3f;
+	--color-text: #d2d2e5;
+	--color-text-dark: #9a9aa3;
+	--color-caution: #95335a;
+	--color-caution-highlight: #a53370;
+
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+body {
+	max-width: 80ch;
+	margin: 0 auto;
+	background-image:
+		linear-gradient(var(--color-dark), var(--color-dark)),
+		url("/gun-metal.png");
+	background-repeat: repeat;
+	color: var(--color-text);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	flex: 0 0 auto;
+	background-color: var(--color-medium);
+	margin: 0;
+	padding: .5em;
+	text-align: center;
+}
+
+header > h1 {
+	font-size: large;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+header > p {
+	margin: 0;
+}
+
+ul {
+	flex: 1 1 auto;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+li.separator {
+	height: 4px;
+	background-color: var(--color-text-dark);
+}
+
+label {
+	margin: 0;
+	padding: .5em;
+	display: flex;
+	align-items: center;
+}
+
+label:hover, label:active {
+	background-color: var(--color-dark-highlight);
+}
+
+label > span {
+	flex: 1 1 auto;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: var(--color-medium);
+	border: 2px solid var(--color-text-dark);
+	padding: 1em;
+	margin-right: 1em;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type="checkbox"]:checked:after {
+	content: '\00D7';
+	text-align: center;
+	vertical-align: middle;
+	font-size: xx-large;
+	font-weight: bold;
+	top: -.33em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: var(--color-text);
+	position: absolute;
+	display: inline;
+}
+
+footer {
+	background-color: var(--color-medium);
+	text-align: center;
+}
+
+footer > button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	background-color: var(--color-caution);
+	border-radius: 5px;
+	border: 0;
+	margin: .5em;
+	font-size: large;
+	font-weight: bold;
+	padding: .2em;
+}
+
+footer > button:hover,
+footer > button:active {
+	background-color: var(--color-caution-highlight);
+}
