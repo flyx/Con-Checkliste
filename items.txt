@@ -23,6 +23,7 @@ D6
 Genesys/EotE Würfel
 Life-Counter
 Bleistifte
+Spitzer
 Block
 Charakterbögen
 ---
