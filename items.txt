@@ -26,5 +26,9 @@ Bleistifte
 Block
 Charakterbögen
 ---
-Drucker
+Laptop
+Mehrfachstecker
+iPad
+Ladekabel
+Drucker & Kabel
 Druckpapier
